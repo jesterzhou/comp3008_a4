@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+requirements:
+node.js version is up to date (26.13.1), please install it from https://nodejs.org/en/download if you do not have node.js or have an older version.
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+confirm node version
+```
+node -v # should print "v26.13.1".
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+after installing node / updating
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd team15_a4_source/src/a4
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# then run,
 
-## Learn More
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+this is a functional interactive interface for searching, adding, removing and editing anime's to a pseudo-account (test)'s anime list. there is no functionality for account management (ie. create, login, logout account) however we can still test the aforementioned features via performing crud operations to a local database. 
 
-## Deploy on Vercel
+features supported:
+- [x] searching for anime
+- [x] autofill suggestions when searching for anime
+- [x] adding anime to list
+- [x] removing anime from list
+- [x] editing properties of anime from list
+- [x] filter user's anime list by status (all anime, watching, completed, on-hold, dropped)
+- [x] search within each filtered results of user's anime list by querying
+- [x] error prevention of user from discarding changes to anime accidentally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+note: the values presented are randomly generated / mock data, and are generated on runtime. therefore values seen from an anime on myanimelist will not be the same as the data presented here.

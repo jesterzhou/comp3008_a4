@@ -1,0 +1,22 @@
+export const studios = [
+  "Madhouse",
+  "MAPPA",
+  "ufotable",
+  "Bones",
+  "Wit Studio",
+  "Production I.G",
+  "Kyoto Animation",
+  "A-1 Pictures",
+  "CloverWorks",
+  "Studio Pierrot",
+  "Toei Animation",
+  "J.C.Staff",
+  "White Fox",
+  "Shaft",
+  "Trigger",
+  "Sunrise",
+  "David Production",
+  "OLM",
+  "Studio Deen",
+  "TMS Entertainment"
+];
